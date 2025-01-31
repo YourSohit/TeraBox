@@ -83,7 +83,7 @@ async def user_info(m: UpdateNewMessage):
 
 # Directly share me the link i will share you the video with direct link
 
-# For premium contact @abdul97233
+# For premium contact @Mr_provider
 # """
 #     await m.reply(help_text)
 @bot.on(
@@ -108,7 +108,7 @@ async def command_help(m: UpdateNewMessage):
 
 Directly share me the link i will share you the video with direct link
 
-For premium contact @abdul97233
+For premium contact @Mr_provider
 """
 
     await m.reply(
@@ -118,19 +118,19 @@ For premium contact @abdul97233
         buttons=[
             [
                 Button.url(
-                    "Website Source Code", url="https://github.com/Abdul97233/TeraBox-Downloader-Bot"
+                    "Devrloper", url="https://t.me/Mr_Provider"
                 ),
                 Button.url(
-                    "Bot Source Code",
-                    url="https://github.com/Abdul97233/TeraBox-Downloader-Bot",
+                    "Channel",
+                    url="https://t.me/ds_bots",
                 ),
             ],
             [
-                Button.url("Channel ", url="https://t.me/NTMpro"),
-                Button.url("Group ", url="https://t.me/NTMchat"),
+                Button.url("Channel ", url="https://t.me/TCP_BOTS"),
+                Button.url("Group ", url="https://t.me/TCP_BOTS"),
             ],
             [
-                Button.url("Owner ", url="https://t.me/abdul97233"),
+                Button.url("Owner ", url="https://t.me/Mr_provider"),
             ],
         ],
     )
@@ -165,19 +165,19 @@ async def ping_pong(m: UpdateNewMessage):
 )
 # async def generate_gift_codes(m: UpdateNewMessage):
 #     quantity = int(m.pattern_match.group(1))
-#     gift_codes = [f"NTM-{str(uuid4())[:8]}" for _ in range(quantity)]
+#     gift_codes = [f"TCP-{str(uuid4())[:8]}" for _ in range(quantity)]
 #     db.sadd(GIFT_CODES_KEY, *gift_codes)
 #     await m.reply(f"{quantity} gift codes generated: {', '.join(gift_codes)}")
 # async def generate_gift_codes(m: UpdateNewMessage):
 #     quantity = int(m.pattern_match.group(1))
-#     gift_codes = [f"NTM-{str(uuid4())[:8]}" for _ in range(quantity)]
+#     gift_codes = [f"TCP-{str(uuid4())[:8]}" for _ in range(quantity)]
 #     db.sadd(GIFT_CODES_KEY, *gift_codes)
 #     reply_text = "\n".join(gift_codes)  # Joining the gift codes with newline character
 #     await m.reply(reply_text)
 
 async def generate_gift_codes(m: UpdateNewMessage):
     quantity = int(m.pattern_match.group(1))
-    gift_codes = [f"NTM-{str(uuid4())[:8]}" for _ in range(quantity)]
+    gift_codes = [f"TCP-{str(uuid4())[:8]}" for _ in range(quantity)]
     db.sadd(GIFT_CODES_KEY, *gift_codes)
     
     # Send a reply confirming the generation of gift codes
@@ -294,7 +294,7 @@ async def broadcast_message(m: UpdateNewMessage):
 #         # Premium user
 #         reply_text = """
 # ┏━━━━━━━━━━⍟
-# ┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+# ┃  𝐓CP 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 # ┗━━━━━━━━━━━━━━━━━⍟
 # ╔══════════⍟
 # ┃🌟 Welcome! 🌟
@@ -306,7 +306,7 @@ async def broadcast_message(m: UpdateNewMessage):
 # ╚═════════════════⍟
 # Do /help or /cmds - Display available commands.
 
-# [『 𝗡⋆𝗧⋆𝗠 』](https://t.me/NTMpro) 
+# [『 TCP 』](https://t.me/TCP_Bots) 
 # """
 #     else:
 #         # Free user
@@ -322,13 +322,13 @@ async def broadcast_message(m: UpdateNewMessage):
 # ┃
 # ┃ To check availabe plan do /plan in chat group @NTMchat
 # ╚═════════════════⍟
-# For subscription inquiries, contact @abdul97233.
+# For subscription inquiries, contact @Mr_provider.
 # """
 
 #     # Send the welcome message
-#     check_if = await is_user_on_chat(bot, "@NTMpro", m.peer_id)
+#     check_if = await is_user_on_chat(bot, "@Tcp_bots", m.peer_id)
 #     if not check_if:
-#         return await m.reply("Please join @NTMpro then send me the link again.")
+#         return await m.reply("Please join @Tcp_bots then send me the link again.")
 #     await m.reply(reply_text, link_preview=False, parse_mode="markdown")
 
 # Define start command to check user's plan and send welcome message accordingly
@@ -353,7 +353,7 @@ async def start(m: UpdateNewMessage):
         # Premium user
         reply_text = """
 ┏━━━━━━━━━━⍟
-┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+┃ 𝐓CP 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 ┗━━━━━━━━━━━━━━━━━⍟
 ╔══════════⍟
 ┃🌟 Welcome! 🌟
@@ -365,7 +365,7 @@ async def start(m: UpdateNewMessage):
 ╚═════════════════⍟
 Do /help or /cmds - Display available commands.
 
-[『 𝗡⋆𝗧⋆𝗠 』](https://t.me/NTMpro) 
+[『 TCP Bots 』](https://t.me/TCP_Bots) 
 """
     else:
         # Free user
@@ -383,7 +383,7 @@ Do /help or /cmds - Display available commands.
 ┃ /id or /info - To check your details
 ┃ /plan - To check availabe plan 
 ╚═════════════════⍟
-For subscription inquiries, contact @abdul97233.
+For subscription inquiries, contact @Mr_provider.
 """
     await m.reply(
         reply_text,
@@ -392,19 +392,19 @@ For subscription inquiries, contact @abdul97233.
         buttons=[
             [
                 Button.url(
-                    "Website Source Code", url="https://github.com/Abdul97233/TeraBox-Downloader-Bot"
+                    "DEVELOPER", url="https://t.me/Mr_Provider"
                 ),
                 Button.url(
-                    "Bot Source Code",
-                    url="https://github.com/Abdul97233/TeraBox-Downloader-Bot",
+                    "Updates Channel",
+                    url="https://t.me/tcp_bots",
                 ),
             ],
             [
-                Button.url("Channel ", url="https://t.me/NTMpro"),
-                Button.url("Group ", url="https://t.me/NTMchat"),
+                Button.url("Channel ", url="https://t.me/TCP_Bots"),
+                Button.url("Group ", url="https://t.me/TCPBotSupport"),
             ],
             [
-                Button.url("Owner ", url="https://t.me/abdul97233"),
+                Button.url("Owner ", url="https://t.me/Mr_Provider"),
             ],
         ],
     )
@@ -449,26 +449,26 @@ async def remove(m: UpdateNewMessage):
 async def display_plan(m: UpdateNewMessage):
     plan_text = """
 ┏━━━━━━━━━━⍟
-┃ 𝐓𝐄𝐑𝐀 𝐁𝐎𝐗 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐁𝐎𝐓 𝐩𝐥𝐚𝐧
+┃ 𝐓𝐄𝐑𝐀 𝐁𝐎𝐗 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐁𝐎𝐓 𝐩𝐥𝐚𝐧s
 ┗━━━━━━━━━━━━━━━━━⍟
 
 Membership Plans:
-1. Rs. 100 for 10 days
-2. Rs. 60 for 4 days
-3. Rs. 30 for 2 days
+1. Rs. 199 for 28 days
+2. Rs. 149 for 14 days
+3. Rs. 99 for 10 days
 4. Rs. 20 for 1 day
 
 Payment Methods Available:
 - UPI
-- Esewa
-- Khalti
+- Paytm
+- Google Pay
 - Phone Pay
-- Fone Pay
+- Binance
 - PayPal
 
-Note: Nepal and India all payment accepted.
+Note: Crypto and Indian modes of Payment Supported .
 
-To purchase premium, send a message to @Abdul97233.
+To purchase premium, send a message to @Mr_provider.
 """
     await m.reply(plan_text, parse_mode="markdown")
 
@@ -565,17 +565,17 @@ async def handle_message(m: Message):
     url = get_urls_from_string(m.text)
     if not url:
         return await m.reply("Please enter a valid url.")
-    check_if = await is_user_on_chat(bot, "@NTMpro", m.peer_id)
+    check_if = await is_user_on_chat(bot, "@TCP_bots", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @NTMpro then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@NTMchat", m.peer_id)
+        return await m.reply("Please join @DS_Bots then send me the link again.")
+    check_if = await is_user_on_chat(bot, "@DS_Bots", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @NTMchat then send me the link again."
+            "Please join @DS_Bots then send me the link again."
         )
     
     is_spam = db.get(m.sender_id)
-    if is_spam and m.sender_id not in [803003146]:
+    if is_spam and m.sender_id not in [1809710185]:
         if db.sismember(PREMIUM_USERS_KEY, m.sender_id):
             return await m.reply("You are spamming. Please wait 30 seconds and try again.")
         else:
@@ -630,7 +630,7 @@ async def handle_message(m: Message):
         return await hm.edit(
             f"Sorry! File is not supported for now. I can download only .mp4, .mkv and .webm files."
         )
-    if int(data["sizebytes"]) > 524288000 and m.sender_id not in [803003146]:
+    if int(data["sizebytes"]) > 524288000 and m.sender_id not in [1809710185]:
         return await hm.edit(
             f"Sorry! File is too big. I can download only 500MB and this file is of {data['size']} ."
         )
@@ -683,7 +683,7 @@ async def handle_message(m: Message):
             progress_callback=progress_bar,
             caption=f"""
 ┏━━━━━━━━━━⍟
-┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+┃  𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 ┗━━━━━━━━━━━━━━━━━⍟
 ╔══════════⍟
 ╟➣𝙁𝙞𝙡𝙚 𝙉𝙖𝙢𝙚: `{data['file_name']}`
@@ -693,7 +693,7 @@ async def handle_message(m: Message):
 ╟➣𝗨𝘀𝗲𝗿𝗻𝗮𝗺𝗲: {user_username}
 ╟➣𝐓𝐨𝐭𝐚𝐥 𝐓𝐢𝐦𝐞 𝐓𝐚𝐤𝐞𝐧: {total_time} sec
 ╚═════════════════⍟
-         @NTMpro
+         @TCP_bots
 """,
             supports_streaming=True,
             spoiler=True,
@@ -714,7 +714,7 @@ async def handle_message(m: Message):
             download,
             caption=f"""
 ┏━━━━━━━━━━⍟
-┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+┃ 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 ┗━━━━━━━━━━━━━━━━━⍟
 ╔══════════⍟
 ╟➣𝙁𝙞𝙡𝙚 𝙉𝙖𝙢𝙚: `{data['file_name']}`
@@ -724,7 +724,7 @@ async def handle_message(m: Message):
 ╟➣𝗨𝘀𝗲𝗿𝗻𝗮𝗺𝗲: {user_username}
 ╟➣𝐓𝐨𝐭𝐚𝐥 𝐓𝐢𝐦𝐞 𝐓𝐚𝐤𝐞𝐧: {total_time} sec
 ╚═════════════════⍟
-         @NTMpro
+         @TCP_bots
 
 """,
             progress_callback=progress_bar,
